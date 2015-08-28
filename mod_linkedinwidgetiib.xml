@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.x" client="site" method="upgrade">
+    <name>mod_linkedinwidgetiib</name>
+    <creationDate>2015-08-28</creationDate>
+    <copyright>Copyright (C). Tous droits réservés.</copyright>
+    <license>GNU/GPL version 2 ou version ultérieure</license>
+    <author>Briand Idossou</author>
+    <authorEmail>idossoubr@yahoo.fr</authorEmail>
+    <authorUrl>http://ibrini.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Linkedin Widgets for your Joomla! website. With this module, you can easily improve your presence on Linkedin. Created by Ibrini. For detailed instructions, please visit http://ibrini.com. You can find other extensions on http://ibrini.com</description>
+
+
+
+    <files>
+        <filename>mod_linkedinwidgetiib.xml</filename>
+        <filename module="mod_linkedinwidgetiib">mod_linkedinwidgetiib.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        
+    </files>
+    
+    
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_linkedinwidgetiib.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_linkedinwidgetiib.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_linkedinwidgetiib.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_linkedinwidgetiib.sys.ini</language>	
+    </languages>
+
+
+
+
+    <config>
+        <fields name="params">
+            <fieldset name="share">
+                <field name="share_show_on_site" type="radio"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_SHARE_SHOW_ON_SITE_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_SHARE_SHOW_ON_SITE_DESC"
+                       default="yes"
+                       required="1"
+                >
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </field>
+                <field name="share_url" type="text"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_SHARE_URL_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_SHARE_URL_DESC"
+                />
+                <field name="share_language" type="list"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_SHARE_LANGUAGE_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_SHARE_LANGUAGE_DESC"
+                       default="en_US"
+                       required="1"
+                >
+                    <option value="en_US">English</option>
+                    <option value="fr_FR">French</option>
+                    <option value="de_DE">German</option>
+                    <option value="es_ES">Spanish</option>
+                </field>
+                <field name="share_count_mode" type="list"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_SHARE_COUNT_MODE_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_SHARE_COUNT_MODE_DESC"
+                       default="right"
+                       required="1"
+                >
+                    <option value="top">Vertical</option>
+                    <option value="right">Horizontal</option>
+                    <option value="no_count">None</option>
+                </field>
+            </fieldset>
+            <fieldset name="mprofile">            
+                <field name="mprofile_show_on_site" type="radio"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_SHOW_ON_SITE_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_SHOW_ON_SITE_DESC"
+                       default="yes"
+                       required="1"
+                >
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </field>
+                <field name="mprofile_url" type="text"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_URL_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_URL_DESC"
+                />
+                <field name="mprofile_display_mode" type="list"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_DISPLAY_MODE_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_DISPLAY_MODE_DESC"
+                       default="inline"
+                       required="1"
+                >
+                    <option value="inline">Inline</option>
+                    <option value="icon">Icon</option>
+                </field>
+                <field name="mprofile_show_connections" type="list"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_SHOW_CONNECTIONS_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_SHOW_CONNECTIONS_DESC"
+                       default="false"
+                       required="1"
+                >
+                    <option value="show">Show</option>
+                    <option value="false">Hide</option>
+                </field>
+                <field name="mprofile_behavior" type="list"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_BEHAVIOR_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_MPROFILE_BEHAVIOR_DESC"
+                       default="on_hover"
+                >
+                    <option value="on_click">On Click</option>
+                    <option value="on_hover">On Hover</option>
+                </field>
+            </fieldset>
+            <fieldset name="jobs">            
+                <field name="jobs_show_on_site" type="radio"
+                       label="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_JOBS_SHOW_ON_SITE_LABEL"
+                       description="MOD_LINKEDINWIDGETIIB_CONFIG_FIELD_JOBS_SHOW_ON_SITE_DESC"
+                       default="yes"
+                       required="1"
+                >
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+
+	
+</extension>
+
+
+<!-- Module built by Ibrini module generator -->
+<!-- http://www.ibrini.com/ -->
